@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Bsp-v0-bfR">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Adding numbers-->
+        <scene sceneID="Kd9-ca-oRS">
+            <objects>
+                <viewController storyboardIdentifier="NumbersViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bsp-v0-bfR" customClass="NumbersViewController" customModule="CombineTutorial_example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ROG-mR-dKN"/>
+                        <viewControllerLayoutGuide type="bottom" id="TgK-ib-9cm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Xxx-TG-DaX">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="749"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OW7-Ij-cj8">
+                                <rect key="frame" x="148" y="283.66666666666669" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="Q60-nJ-smH"/>
+                                    <constraint firstAttribute="height" constant="30" id="i3X-yk-HdM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="2" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OB5-YD-ipf">
+                                <rect key="frame" x="148" y="321.66666666666669" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="cM0-Jb-tvr"/>
+                                    <constraint firstAttribute="height" constant="30" id="jAd-bM-m8C"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="3" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tmE-z0-z1o">
+                                <rect key="frame" x="148" y="359.66666666666669" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5Mm-2L-x2T"/>
+                                    <constraint firstAttribute="width" constant="97" id="abZ-oz-Prs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RGa-fF-aQm">
+                                <rect key="frame" x="129" y="364.33333333333331" width="11" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JUe-dO-bTZ" userLabel="Separator">
+                                <rect key="frame" x="129" y="397.66666666666669" width="116" height="1"/>
+                                <color key="backgroundColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="116" id="5de-03-QF8"/>
+                                    <constraint firstAttribute="height" constant="1" id="jcU-Q6-tQi"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-1" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8D-N3-v6r">
+                                <rect key="frame" x="129" y="406.66666666666669" width="116" height="20.333333333333314"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="exs-cb-c40"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tmE-z0-z1o" firstAttribute="top" secondItem="OB5-YD-ipf" secondAttribute="bottom" constant="8" id="4Qx-VU-8o0"/>
+                            <constraint firstItem="tmE-z0-z1o" firstAttribute="leading" secondItem="RGa-fF-aQm" secondAttribute="trailing" constant="8" id="4tu-Dp-vHS"/>
+                            <constraint firstItem="JUe-dO-bTZ" firstAttribute="top" secondItem="tmE-z0-z1o" secondAttribute="bottom" constant="8" id="7VZ-cG-oCG"/>
+                            <constraint firstItem="tmE-z0-z1o" firstAttribute="centerX" secondItem="Xxx-TG-DaX" secondAttribute="centerX" id="BLc-ft-oER"/>
+                            <constraint firstItem="X8D-N3-v6r" firstAttribute="top" secondItem="JUe-dO-bTZ" secondAttribute="bottom" constant="8" id="EKW-eO-rIm"/>
+                            <constraint firstItem="RGa-fF-aQm" firstAttribute="centerY" secondItem="tmE-z0-z1o" secondAttribute="centerY" id="Rjp-zY-iIf"/>
+                            <constraint firstItem="JUe-dO-bTZ" firstAttribute="trailing" secondItem="tmE-z0-z1o" secondAttribute="trailing" id="TQx-6X-Z7Q"/>
+                            <constraint firstItem="tmE-z0-z1o" firstAttribute="centerY" secondItem="Xxx-TG-DaX" secondAttribute="centerY" id="Tpu-RA-02H"/>
+                            <constraint firstItem="OB5-YD-ipf" firstAttribute="top" secondItem="OW7-Ij-cj8" secondAttribute="bottom" constant="8" id="aSZ-J7-woD"/>
+                            <constraint firstItem="OB5-YD-ipf" firstAttribute="trailing" secondItem="OW7-Ij-cj8" secondAttribute="trailing" id="e1J-eJ-prD"/>
+                            <constraint firstItem="X8D-N3-v6r" firstAttribute="leading" secondItem="JUe-dO-bTZ" secondAttribute="leading" id="n2Z-sM-SEH"/>
+                            <constraint firstItem="tmE-z0-z1o" firstAttribute="trailing" secondItem="OB5-YD-ipf" secondAttribute="trailing" id="oHk-ix-sXd"/>
+                            <constraint firstItem="X8D-N3-v6r" firstAttribute="trailing" secondItem="JUe-dO-bTZ" secondAttribute="trailing" id="uZX-re-tUN"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Adding numbers" id="DY3-xA-cSL"/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
+                    <connections>
+                        <outlet property="number1" destination="OW7-Ij-cj8" id="63w-wo-WrT"/>
+                        <outlet property="number2" destination="OB5-YD-ipf" id="soP-NZ-s0o"/>
+                        <outlet property="number3" destination="tmE-z0-z1o" id="B3Y-i4-Ph3"/>
+                        <outlet property="result" destination="X8D-N3-v6r" id="E3f-FG-Qjc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o7e-yx-dZG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="627.20000000000005" y="-338.23088455772114"/>
+        </scene>
+    </scenes>
+</document>
