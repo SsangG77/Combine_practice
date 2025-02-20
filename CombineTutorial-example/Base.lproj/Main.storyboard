@@ -33,7 +33,7 @@
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3X-8Q-yov">
                                                         <rect key="frame" x="0.0" y="54.333333333333343" width="353" height="34.333333333333343"/>
                                                         <state key="normal" title="Button"/>
-                                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                                        <buttonConfiguration key="configuration" style="filled" title="navToNumbersSwiftUI"/>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRa-eQ-vwZ">
                                                         <rect key="frame" x="0.0" y="108.66666666666666" width="353" height="34.333333333333343"/>
@@ -140,6 +140,7 @@
                     <navigationItem key="navigationItem" id="hLv-uG-By2"/>
                     <size key="freeformSize" width="393" height="1852"/>
                     <connections>
+                        <outlet property="navToNumberrsSwiftUI" destination="q3X-8Q-yov" id="Jsm-zl-Kqj"/>
                         <outlet property="navToNumbersBtn" destination="Qhd-TG-zNZ" id="qtz-TI-YYp"/>
                     </connections>
                 </viewController>
