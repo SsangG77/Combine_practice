@@ -19,8 +19,31 @@ class NumbersViewController: UIViewController {
     
     var subscriptions = Set<AnyCancellable>()
 
+    var viewModel = NumbersVM()
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //
+        number1.textPublisher
+            .compactMap{ $0 }
+            .assign(to: \.number1, on: viewModel)
+            .store(in: &subscriptions)
+        number2.textPublisher
+            .compactMap{ $0 }
+            .assign(to: \.number2, on: viewModel)
+            .store(in: &subscriptions)
+        number3.textPublisher
+            .compactMap{ $0 }
+            .assign(to: \.number3, on: viewModel)
+            .store(in: &subscriptions)
+      
+        viewModel.$resultValue
+            .compactMap { $0 }
+            .assign(to: \.text, on: result)
+            .store(in: &subscriptions)
+        
         
         Publishers
             .CombineLatest3(
